@@ -189,7 +189,9 @@ header section{
     display: block;
     margin-top: 15px;
 }
-
+.singleProject p{
+    font-size: 1rem;
+}
 .myProjects .myProjects-body .card-body {
     display: flex;
     flex-direction: column;
