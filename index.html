@@ -86,7 +86,7 @@
                                 </li>
                             </ul>
                             <a href="https://docs.google.com/document/d/11DX-4PuTBs54fI_m2qKWdJU0Yml-fRc6/edit?usp=sharing&ouid=118338328688320976684&rtpof=true&sd=true"
-                                class="my-fill_button"><i class="bi bi-download"></i> Download Resume</a>
+                                class="my-light_button"><i class="bi bi-download"></i> Download Resume</a>
                         </div>
                     </div>
                 </div>
@@ -97,6 +97,7 @@
 
     <!--main section-->
     <main>
+        <!-- hero-profile section -->
         <section class="hero-profile">
             <div class="heroProfile-body container-fluid text-center">
                 <p class="hero-title">
@@ -110,18 +111,52 @@
                 <div class="hero-info">
                     <h1>Md. Yasin Ahmed Mahi</h1>
                     <h4>Flutter Developer</h4>
-                    <p class="hero-paragraph"> An independent app and web developer from Bangladesh, building product
-                        and online experiences for companies large and small.</p>
+                    <p class="hero-paragraph">An independent app and web developer from Bangladesh, building product and
+                        online experiences for companies large and small.</p>
                     <div class="hero-buttons">
-                        <a href="https://docs.google.com/document/d/11DX-4PuTBs54fI_m2qKWdJU0Yml-fRc6/edit?usp=sharing&ouid=118338328688320976684&rtpof=true&sd=true"
-                            class="my-blank_button"><i class="bi bi-download"></i> Download Resume</a>
+                        <a class="my-light_button" data-bs-toggle="modal" data-bs-target="#aboutMeModal">
+                            <i class="bi bi-info-circle"></i> <strong>More about Me?</strong>
+                        </a>
                         <a href="https://www.linkedin.com/in/mdyasiin/"><i class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/mdyasinahmed"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="hero-about container-fluid d-none">
+
+            <!-- Modal -->
+            <div class="modal fade" id="aboutMeModal" tabindex="-1" aria-labelledby="aboutMeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-header text-center">
+                            <div class="section-headers w-100">
+                                <h4>About Me</h4>
+                                <i class="bi bi-caret-down-fill"></i>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <p>An independent app and web developer from Bangladesh, specializing in building scalable,
+                                user-friendly digital products for companies large and small. As a dedicated Flutter
+                                developer, I focus on creating seamless experiences for both Android and iOS platforms.
+                                Currently pursuing a Bachelor of Science in Computer Science and Engineering at
+                                Metropolitan University, Sylhet, Bangladesh. I founded BCODER to showcase my skills in
+                                Flutter, UI/UX design, and problem-solving. I'm passionate about contributing my
+                                expertise to dynamic teams and helping bring innovative ideas to life.</p>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="https://drive.google.com/drive/folders/1cOep9VraxU5T83fO1htJeENrqifQWbAJ?usp=sharing"
+                                class="my-dark_button" target="_blank">
+                                <i class="bi bi-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </section>
 
         <!-- projects section -->
@@ -134,10 +169,13 @@
                 <div class="row projectSingle-body">
                     <div class="col-lg-4 col-md-6 singleProject-body">
                         <div class="card singleProject">
-                            <img src="assets/images/my_projects/yasin's_flutter_apps.png" class="card-img-top" alt="Project 1">
+                            <img src="assets/images/my_projects/yasin's_flutter_apps.png" class="card-img-top"
+                                alt="Project 1">
                             <div class="card-body">
                                 <h5 class="card-title">Flutter Mobile Applications</h5>
-                                <p class="card-text">Discover cutting-edge mobile apps built with Flutter, delivering sleek designs and powerful functionality. See all the apps that elevate mobile experiences.</p>
+                                <p class="card-text">Discover cutting-edge mobile apps built with Flutter, delivering
+                                    sleek designs and powerful functionality. See all the apps that elevate mobile
+                                    experiences.</p>
                                 <div>
                                     <a href="#">View in Details</a>
                                 </div>
@@ -146,20 +184,25 @@
                     </div>
                     <div class="col-lg-4 col-md-6 singleProject-body">
                         <div class="card singleProject">
-                            <img src="assets/images/my_projects/flutter_dekstop.png" class="card-img-top" alt="Project 2">
+                            <img src="assets/images/my_projects/flutter_dekstop.png" class="card-img-top"
+                                alt="Project 2">
                             <div class="card-body">
                                 <h5 class="card-title">Flutter Desktop Applications</h5>
-                                <p class="card-text">Explore desktop apps created with Flutter for smooth, cross-platform performance. Check out the full collection of feature-rich desktop tools.</p>
+                                <p class="card-text">Explore desktop apps created with Flutter for smooth,
+                                    cross-platform performance. Check out the full collection of feature-rich desktop
+                                    tools.</p>
                                 <a href="#">View in Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 singleProject-body">
                         <div class="card singleProject">
-                            <img src="assets/images/my_projects/yasin's_websites.png" class="card-img-top" alt="Project 3">
+                            <img src="assets/images/my_projects/yasin's_websites.png" class="card-img-top"
+                                alt="Project 3">
                             <div class="card-body">
                                 <h5 class="card-title">Web Development</h5>
-                                <p class="card-text">Dive into modern, responsive websites designed to impress. View all the web projects showcasing innovation and creativity.</p>
+                                <p class="card-text">Dive into modern, responsive websites designed to impress. View all
+                                    the web projects showcasing innovation and creativity.</p>
                                 <a href="#">View in Details</a>
                             </div>
                         </div>
@@ -174,7 +217,7 @@
                     <p>It's time to start your project</p>
                     <h2>Drop a <span>Message</span> for any Queries</h2>
                     <p>Let's work together in your upcoming project.</p>
-                    <a class="my-fill_button" href="../contact.html"><i class="bi bi-chat-right-text"></i> Send
+                    <a class="my-light_button" href="../contact.html"><i class="bi bi-chat-right-text"></i> Send
                         Message</a>
                 </div>
             </div>
@@ -250,7 +293,7 @@
                                     Are you constantly struggling to find the time to accomplish everything you need to
                                     do? If so, you’re not alone...</p>
                                 <a href="https://medium.com/@md_yasinahmed/what-happens-if-you-dont-set-tasks-for-the-next-day-before-going-to-sleep-6b2bc875aea"
-                                    class="my-fill_button">Read on Medium..</a>
+                                    class="my-light_button">Read on Medium..</a>
                             </div>
                         </div>
                     </div>
@@ -264,7 +307,7 @@
                                     order to capture the audience’s interest and make it simple for them to understand
                                     what you are saying...</p>
                                 <a href="https://medium.com/@md_yasinahmed/how-to-prepare-a-well-organized-presentation-dfc332f47dff"
-                                    class="my-fill_button">Read on Medium..</a>
+                                    class="my-light_button">Read on Medium..</a>
                             </div>
                         </div>
                     </div>
