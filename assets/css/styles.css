@@ -220,8 +220,7 @@ header section{
     }
 }
 .oj_profile_card {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, 
-                rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .oj_logo {
     height: 100px;
@@ -238,15 +237,19 @@ header section{
 .oj_profile_single_info p{
     font-weight: 400;
     font-size: .95rem;
-    color: #707070;
+    color: #585e6a;
 }
 .oj_profile_single_link a:first-child {
     margin-right: 25px;
 }
 .oj_profile_single_link a{
-    font-size: .85rem;
-    color: var(--primary-color);
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--second-color);
     text-decoration: underline !important;
+}
+.oj_profile_single_link a:hover {
+    color: var(--primary-color);
 }
 
 /* Blog Section CSS */
@@ -286,15 +289,14 @@ footer .footer-body .footer-icons a {
 }
 footer .footer-body .footer-icons a:hover {
     color: var(--primary-color);
-    /* background-color: var(--hover-color); */
 }
-footer .footer-body .footer-contact a {
-    /* display: flex; */
-    /* justify-content: center;  */
+footer .footer-body .footer_contact a {
+    font-size: .85rem;
     text-decoration: none;
     color: var(--primary-color);
 }
-footer .footer-body .footer-contact .footer-contact-single {
+
+footer .footer-body .footer_contact .footer_contact_single {
     margin: 0px 5px;
     color: var(--primary-color);
 }
@@ -305,4 +307,26 @@ footer .footer-body .copyright a {
     text-decoration: none;
     color:#707070;
     font-size: 14px;
+    font-size: .75rem;
+}
+
+
+/* Custom Icon */
+.my-ico{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle; 
+}
+.oj-hr{
+    background-image: url('../images/my-ico/oj/hackerrank_profile.png');
+}
+.oj-lc{
+    background-image: url('../images/my-ico/oj/leetcode_profile.png');
+}
+.oj-cf{
+    background-image: url('../images/my-ico/oj/codeforces_profile.png');
 }
