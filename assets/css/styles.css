@@ -1,140 +1,143 @@
-body{
+body {
     background: var(--background-color) !important;
 }
 
-:root{
+:root {
     --primary-color: #2f4359;
-
-    --background-color : #eceeff;
-
-    --hover-color : blue;
-
+    --background-color: #eceeff;
+    --hover-color: blue;
     --second-color: #605555;
 }
+
 a {
     text-decoration: none !important;
 }
+
 a:hover {
     text-decoration: none !important;
 }
 
-section{
+/* Section styles */
+section {
     margin: 30px 0;
 }
+
 .section-headers {
     margin-bottom: 15px;
 }
-.section-headers h4{
+
+.section-headers h4 {
     font-size: 1.75rem;
     font-weight: 650;
 }
-/* Buttons styles */
-.my-dark_button{
+
+/* Buttons */
+.my-dark_button, .my-light_button {
     margin-top: 20px !important;
-    margin: 15px 0;
     padding: 5px 14px;
-    text-decoration: none;
-    color: var(--background-color);
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
     border-radius: 50px;
     font-weight: 500;
-}
-.my-dark_button:hover {
-    color: var(--primary-color) !important;
-    background-color: var(--background-color);
-    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    margin: 15px 0;
     transition: 1s;
 }
 
-.my-light_button{
-    margin-top: 20px !important;
-    text-decoration: none;
-    margin: 15px 0;
-    padding: 5px 14px;
+.my-dark_button {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.my-dark_button:hover {
+    color: var(--primary-color) !important;
+    background-color: var(--background-color);
+}
+
+.my-light_button {
+    color: var(--primary-color) !important;
     background-color: var(--background-color);
     border: 1px solid var(--background-color);
-    color: var(--primary-color) !important;
-    font-weight: 500;
-    border-radius: 50px;
 }
+
 .my-light_button:hover {
     color: var(--background-color) !important;
+    background: none;
     border: 1px solid var(--background-color);
-    background:none;
-    transition: 1s;
 }
+
+/* Icon styles */
 i {
     font-size: 18px;
     margin: 5px;
 }
 
-
-
-/* navbar area */
-header .navBar-section nav{
+/* Navbar */
+header .navBar-section nav,
+header .offcanvas {
     background-color: var(--primary-color) !important;
 }
 
-header .offcanvas{
-    background-color: var(--primary-color) !important;
-}
-
-
-/* hero-profile area */
-header section{
-    margin-top: 0 !important;
-    font-weight: 200;
-}
-.hero-profile{
+/* Hero profile */
+.hero-profile {
     padding: 75px 0;
     margin-top: 0 !important;
     background-color: var(--primary-color);
     color: var(--background-color);
 }
-.hero-profile .hero-title{
+
+.hero-profile .hero-title {
     font-family: 'Courgette', cursive !important;
 }
-.hero-profile .hero-profile-image img{
+
+.hero-profile .hero-profile-image img {
     height: 12rem;
     width: 12rem;
     border: 5px solid rgba(122, 122, 150, 0.75);
 }
-.hero-profile .hero-info{
+
+.hero-profile .hero-info {
     margin-top: 25px;
 }
-.hero-profile .hero-info h1{
+
+.hero-profile .hero-info h1 {
     letter-spacing: 1px;
     font-size: 2rem;
     font-weight: 700;
 }
-.hero-profile .hero-info .hero-paragraph{
+
+.hero-profile .hero-info .hero-paragraph {
     margin: 10px 25px;
     font-weight: 450;
 }
+
 .hero-profile .hero-info .hero-buttons {
     margin-top: 20px;
 }
-.hero-profile .hero-info .hero-buttons a{
+
+.hero-profile .hero-info .hero-buttons a {
     color: var(--background-color);
     margin: 5px;
 }
-/* Modal styling */
+
+/* Modal styles */
 .modal-content {
     background-color: var(--background-color) !important;
 }
+
 .modal-header {
     border-bottom: none;
     margin-top: 20px;
     color: var(--primary-color);
 }
 
-.modal-body {
+.modal-body, .modal-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    gap: 10px;
+    padding: 15px;
 }
 
 .modal-body p {
@@ -148,41 +151,31 @@ header section{
     top: 10px;
     right: 10px;
 }
-.modal-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px; /* To add some space between elements if needed */
-    padding: 15px;
-}
-/* Projects Section CSS */
-.singleProject {
+
+/* Projects */
+.singleProject, .singleArticle {
     background-color: var(--primary-color) !important;
     color: var(--background-color);
     border: none !important;
-    border-radius: 0% !important;
     box-shadow: 15px 15px 0px -10px rgba(27, 27, 50, 0.30);
-    -webkit-box-shadow: 15px 15px 0px -10px rgba(27, 27, 50, 0.30);
-    -moz-box-shadow: 15px 15px 0px -10px rgba(27, 27, 50, 0.30);
 }
 
-.singleProject img {
-    border: none !important;
-    border-radius: 0% !important;
+.singleProject img, .singleArticle img {
     max-height: 200px;
     object-fit: cover;
+    border: none !important;
 }
 
-.singleProject-body {
+.singleProject-body, .singleArticle-body {
     padding: 25px !important;
 }
+
 .projectSingle-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .myProjects .myProjects-body .singleProject-body a {
     text-decoration: underline !important;
     color: var(--background-color);
@@ -190,143 +183,106 @@ header section{
     display: block;
     margin-top: 15px;
 }
-.singleProject p{
-    font-size: 1rem;
-}
-.myProjects .myProjects-body .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
 
-/* Drop Message Area */
-.dropMessage{
+/* Drop Message */
+.dropMessage {
     padding: 50px 0 !important;
     background-color: var(--primary-color);
     color: #FFFFFF;
 }
-/* My Online Judge Profile Section */
+
+/* Online Judge Profiles */
 .oj_profile_card {
     height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px, rgba(0, 0, 0, 0.1) 0px 0px 1px;
 }
+
 .oj_profile_single {
     margin: 20px auto;
 }
-.oj_profile_single:hover{
-    .oj_profile_card{
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-                    rgba(0, 0, 0, 0.05) 1px 4px 6px -2px;
-    }
+
+.oj_profile_single:hover .oj_profile_card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 1px 4px 6px -2px;
 }
-.oj_profile_card {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-}
-.oj_logo {
-    height: 100px;
-    width: 100%;
-}
-.oj_logo img{
+
+.oj_logo img {
     height: 100%;
     width: 100%;
 }
+
 .oj_details {
     padding: 15px;
     margin: auto;
 }
-.oj_profile_single_info p{
+
+.oj_profile_single_info p {
     font-weight: 400;
     font-size: .95rem;
     color: #585e6a;
 }
-.oj_profile_single_link a:first-child {
-    margin-right: 25px;
-}
-.oj_profile_single_link a{
+
+.oj_profile_single_link a {
     font-size: .8rem;
     font-weight: 700;
     color: var(--second-color);
     text-decoration: underline !important;
 }
+
 .oj_profile_single_link a:hover {
     color: var(--primary-color);
 }
 
-/* Blog Section CSS */
-.singleArticle {
-    background-color: var(--primary-color) !important;
-    color: var(--background-color);
-    border: none !important;
-    border-radius: 0% !important;
-    box-shadow: 15px 15px 0px -10px rgba(27,27,50,0.30);
-    -webkit-box-shadow: 15px 15px 0px -10px rgba(27,27,50,0.30);
-    -moz-box-shadow: 15px 15px 0px -10px rgba(27,27,50,0.30);
-}
-.singleArticle img{
-    border: none !important;
-    border-radius: 0% !important;
-}
-.singleArticle-body {
-    padding: 25px !important;
-}
-
-/* footer section */
+/* Footer */
 footer {
     padding-bottom: 0 !important;
     margin-top: 50px !important;
 }
-footer section{
-    padding-bottom: 0;
-}
+
 footer .footer-body .footer-text h3 {
     font-weight: 700;
     letter-spacing: -.65px;
     color: var(--primary-color);
 }
+
 footer .footer-body .footer-icons a {
     font-size: 1.2rem;
     color: var(--second-color);
 }
-footer .footer-body .footer-icons a:hover {
-    color: var(--primary-color);
-}
+
+footer .footer-body .footer-icons a:hover,
 footer .footer-body .footer_contact a {
-    font-size: .85rem;
-    text-decoration: none;
     color: var(--primary-color);
 }
 
 footer .footer-body .footer_contact .footer_contact_single {
     margin: 0px 5px;
-    color: var(--primary-color);
 }
+
 footer .footer-body .copyright {
     margin-top: 15px;
-}
-footer .footer-body .copyright a {
-    text-decoration: none;
-    color:#707070;
-    font-size: 14px;
+    color: #707070;
     font-size: .75rem;
 }
 
-
-/* Custom Icon */
-.my-ico{
+/* Custom Icons */
+.my-ico {
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
-.oj-hr{
+
+.oj-hr {
     background-image: url('../images/my-ico/oj/hackerrank_profile.png');
 }
-.oj-lc{
+
+.oj-lc {
     background-image: url('../images/my-ico/oj/leetcode_profile.png');
 }
-.oj-cf{
+
+.oj-cf {
     background-image: url('../images/my-ico/oj/codeforces_profile.png');
 }
