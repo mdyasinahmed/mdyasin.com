@@ -207,8 +207,11 @@ header section{
     color: #FFFFFF;
 }
 /* My Online Judge Profile Section */
+.oj_profile_card {
+    height: 100%;
+}
 .oj_profile_single {
-    padding: 10px;
+    margin: 20px auto;
 }
 .oj_profile_single:hover{
     .oj_profile_card{
@@ -217,29 +220,34 @@ header section{
     }
 }
 .oj_profile_card {
-    padding: 50px 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, 
                 rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .oj_logo {
-    height: 120px;
-    padding: 25px;
+    height: 100px;
+    width: 100%;
 }
 .oj_logo img{
-    height: 60px;
+    height: 100%;
+    width: 100%;
+}
+.oj_details {
+    padding: 15px;
+    margin: auto;
 }
 .oj_profile_single_info p{
-    margin: auto 35px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: .95rem;
+    color: #707070;
 }
-.oj_profile_single_link {
-    margin-top: 10px;
+.oj_profile_single_link a:first-child {
+    margin-right: 25px;
 }
 .oj_profile_single_link a{
-    margin-top: 10px !important;
-    color: black !important;
+    color: var(--primary-color);
+    text-decoration: underline !important;
 }
+
 /* Blog Section CSS */
 .singleArticle {
     background-color: var(--primary-color) !important;
